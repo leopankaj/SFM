@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SFM Testing]">
+  <test thread-count="5" name="Regression Testing(failed)">
+    <classes>
+      <class name="com.sfm.test.uiActions.LoginTest">
+        <methods>
+          <include name="test"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.sfm.test.uiActions.LoginTest -->
+    </classes>
+  </test> <!-- Regression Testing(failed) -->
+</suite> <!-- Failed suite [SFM Testing] -->

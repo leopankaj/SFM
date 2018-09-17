@@ -1,0 +1,8 @@
+<suite name="SFM Testing">
+	<test name="Regression Testing">
+		<classes>
+			<class name="com.sfm.test.uiActions.LoginTest"/>
+		</classes>
+	
+	</test>
+</suite>

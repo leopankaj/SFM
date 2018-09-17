@@ -4,17 +4,22 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.Reporter;
 
 import com.sfm.testBase.TestBase;
 
+
+
+
+
  public class LoginPage extends TestBase {
-	 WebDriver driver; 
 	
-	@FindBy(name="username")
+	
+	@FindBy(id="Username")
 	WebElement userName;
 	
-	@FindBy(name="password")
+	@FindBy(id="password")
 	WebElement password;
 	
 	@FindBy(xpath="/html/body/div/form/button")
@@ -29,6 +34,7 @@ import com.sfm.testBase.TestBase;
 		userName.click();
 		userName.clear();
 		userName.sendKeys(username);
+		System.out.println("click");
 		Reporter.log("enter userName",true);
 	}
 	public void enterpassword(String password){
@@ -40,6 +46,14 @@ import com.sfm.testBase.TestBase;
 	public void navigateToHomePage(){
 		this.login_button.click();
 		Reporter.log("click on login button",true);
+		Assert.assertEquals("http://103.231.43.144/home", driver.getCurrentUrl());
+		Reporter.log("Current url is : "+driver.getCurrentUrl()+" ",true);
+		
+	}
+
+	public void login(String username,String password){
+		enterUserName(username);
+		enterpassword(password);
 		
 	}
 	
