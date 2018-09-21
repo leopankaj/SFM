@@ -5,8 +5,8 @@
     <classes>
       <class name="com.sfm.test.uiActions.LoginTest">
         <methods>
+          <include name="teardown"/>
           <include name="test"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.sfm.test.uiActions.LoginTest -->

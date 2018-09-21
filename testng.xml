@@ -1,4 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="SFM Testing">
+	<listeners>
+		<listener class-name="com.sfm.ExtendReportListener.ExtendReporterNG"/>
+	</listeners>
+	
 	<test name="Regression Testing">
 		<classes>
 			<class name="com.sfm.test.uiActions.LoginTest"/>

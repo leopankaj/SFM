@@ -2,12 +2,6 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[Implicit wait]]>
-    </line>
-    <line>
-      <![CDATA[Application open successfully]]>
-    </line>
-    <line>
       <![CDATA[enter userName]]>
     </line>
     <line>
@@ -17,28 +11,19 @@
       <![CDATA[click on login button]]>
     </line>
     <line>
-      <![CDATA[Current url is : http://103.231.43.144/home ]]>
-    </line>
-    <line>
-      <![CDATA[Browser closed successfully]]>
+      <![CDATA[Current url is : http://192.168.2.245:8282/SFM/home ]]>
     </line>
   </reporter-output>
-  <suite name="SFM Testing" duration-ms="10550" started-at="2018-09-17T06:18:42Z" finished-at="2018-09-17T06:18:52Z">
+  <suite name="SFM Testing" duration-ms="12559" started-at="2018-09-21T07:07:21Z" finished-at="2018-09-21T07:07:34Z">
     <groups>
     </groups>
-    <test name="Regression Testing" duration-ms="10550" started-at="2018-09-17T06:18:42Z" finished-at="2018-09-17T06:18:52Z">
+    <test name="Regression Testing" duration-ms="12559" started-at="2018-09-21T07:07:21Z" finished-at="2018-09-21T07:07:34Z">
       <class name="com.sfm.test.uiActions.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sfm.test.uiActions.LoginTest@5622fdf]" name="setUp" is-config="true" duration-ms="4897" started-at="2018-09-17T06:18:42Z" finished-at="2018-09-17T06:18:46Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.sfm.test.uiActions.LoginTest@548e7350]" name="setUp" is-config="true" duration-ms="6828" started-at="2018-09-21T07:07:21Z" finished-at="2018-09-21T07:07:28Z">
           <reporter-output>
-            <line>
-              <![CDATA[Implicit wait]]>
-            </line>
-            <line>
-              <![CDATA[Application open successfully]]>
-            </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test()[pri:0, instance:com.sfm.test.uiActions.LoginTest@5622fdf]" name="test" duration-ms="5060" started-at="2018-09-17T06:18:46Z" finished-at="2018-09-17T06:18:52Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:com.sfm.test.uiActions.LoginTest@548e7350]" name="test" duration-ms="5097" started-at="2018-09-21T07:07:28Z" finished-at="2018-09-21T07:07:33Z">
           <reporter-output>
             <line>
               <![CDATA[enter userName]]>
@@ -50,17 +35,14 @@
               <![CDATA[click on login button]]>
             </line>
             <line>
-              <![CDATA[Current url is : http://103.231.43.144/home ]]>
+              <![CDATA[Current url is : http://192.168.2.245:8282/SFM/home ]]>
             </line>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.sfm.test.uiActions.LoginTest@5622fdf]" name="tearDown" is-config="true" duration-ms="573" started-at="2018-09-17T06:18:52Z" finished-at="2018-09-17T06:18:52Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.sfm.test.uiActions.LoginTest@548e7350]" name="teardown" is-config="true" duration-ms="613" started-at="2018-09-21T07:07:33Z" finished-at="2018-09-21T07:07:34Z">
           <reporter-output>
-            <line>
-              <![CDATA[Browser closed successfully]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- teardown -->
       </class> <!-- com.sfm.test.uiActions.LoginTest -->
     </test> <!-- Regression Testing -->
   </suite> <!-- SFM Testing -->

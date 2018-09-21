@@ -141,7 +141,10 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;SFM Testing&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;SFM Testing&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.sfm.ExtendReportListener.ExtendReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Regression Testing&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.sfm.test.uiActions.LoginTest&quot;/&gt;
@@ -188,7 +191,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test')
 data.setCell(0, 2, 'com.sfm.test.uiActions.LoginTest')
-data.setCell(0, 3, 5060);
+data.setCell(0, 3, 5097);
 window.suiteTableData['SFM_Testing']= { tableData: data, tableDiv: 'times-div-SFM_Testing'}
 return data;
 }
@@ -210,7 +213,7 @@ return data;
                 <span class="reporter-method-output">enter userName</span>
                 <span class="reporter-method-output">enter password</span>
                 <span class="reporter-method-output">click on login button</span>
-                <span class="reporter-method-output">Current url is : http://103.231.43.144/home </span>
+                <span class="reporter-method-output">Current url is : http://192.168.2.245:8282/SFM/home </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -235,11 +238,11 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test</span>
-                <span class="method-start">4897 ms</span>
+                <span class="method-start">6828 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">9961 ms</span>
+                <span class="method-name">teardown</span>
+                <span class="method-start">11928 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
